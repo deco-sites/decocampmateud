@@ -24,12 +24,12 @@ const copy = (id: string, title: string) => {
 export default function Coupon({ title, description }: Props) {
   const id = useId();
   return (
-    <div id={id} class="card w-96 bg-primary shadow-xl mx-auto rounded-xl">
+    <div id={id} class="card w-96 bg-secondary shadow-xl mx-auto rounded-xl">
       <div class="card-body">
         <p class="card-title">Use o cupom: {title}</p>
         {description && <p>{description}</p>}
         <div class="card-actions justify-end">
-          <button class="btn btn-secondary rounded-xl">
+          <button class="btn btn-primary rounded-xl">
             Copiar cupom
           </button>
         </div>
